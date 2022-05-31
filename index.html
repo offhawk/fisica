@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container-principal">
+        <p id="info">Uma amostra de <span>“M"</span> se encontra a <span>temperatura de “T1"</span> sob pressão de 1atm. Calcule a
+            quantidade de calorias “Q” que esse sistema deve receber até que toda a água se transforme em
+            vapor a <span>temperatura de “T2”</span>. Dados: <span>calor específico da amostra : “C”</span> cal/g °C; <span>calor latente de
+            vaporização da amostra : “LV”</span> cal/g.
+        </p>
+        <span id="resultado"></span>
+        <div class="container-inputs">
+            <label>
+                <p>Massa</p>
+                <input type="number" id="input-massa">
+                <p class="infos">em gramas</p>
+            </label>
+            <label>
+                <p>T1</p>
+                <input type="number" id="input-t1">
+                <p class="infos">em °C</p>
+            </label>
+            <label>
+                <p>T2</p>
+                <input type="number" id="input-t2">
+                <p class="infos">em °C</p>
+            </label>
+            <label>
+                <p>c Sólido</p>
+                <input type="number" id="input-calorEspecificoSolido">
+                <p class="infos">em cal/g°C</p>
+            </label>
+            <label>
+                <p>L Vaporização</p>
+                <input type="number" id="input-calorLatenteVaporização">
+                <p class="infos">em cal/g</p>
+            </label>
+        </div>
+        <div class="container-inputs">
+            <p>Opicionais <span style="font-size: 10px;">(Preencha caso esse sistema seja diferente de Água / Gelo / Vapor de água)</span></p>
+            <label>
+                <p>c Líquido</p>
+                <input type="number" id="input-calorEspecificoLiquido">
+                <p class="infos">em cal/g°C</p>
+            </label>
+            <label>
+                <p>c Vapor</p>
+                <input type="number" id="input-calorEspecificoVapor">
+                <p class="infos">em cal/g°C</p>
+            </label>
+            <label>
+                <p>L Fusão</p>
+                <input type="number" id="input-calorLatenteFusao">
+                <p class="infos">em cal/g</p>
+            </label>
+            
+        </div>
+        <button id="btn-calcular">Calcular</button>
+        <script src="script.js"></script>
+    </div>
+    <ul id="criadores">
+        <li>Alunos: Gustavo Henrique, André Henrique, João Pedro Torres e Luan Xavier</li>
+        <li>Turma: INF2A</li>
+    </ul>
+</body>
+</html>
